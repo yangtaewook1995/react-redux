@@ -13,10 +13,20 @@ const UserContextProvider = ({ children }) => {
   };
 
   return (
-    <UserContext.Provider value={{ user, logUserIn }}>
+    <UserContext.Provider value={{ user, fn: { logUserIn } }}>
       {children}
     </UserContext.Provider>
   );
+};
+
+export const useUser = () => {
+  const { user } = useContext(UserContext);
+  return user;
+};
+
+export const useFns = () => {
+  const { fn } = useContext(UserContext);
+  return fn;
 };
 
 export default UserContextProvider;
