@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
-import { UserContext, useUser } from "./context";
+// import React, { useContext } from "react";
+// import { UserContext, useUser } from "./context";
 
-const Header = () => {
-  const { name, loggedIn } = useUser();
-  return (
-    <header>
-      <a href="#">Home</a> Hello, {name}, you are{" "}
-      {loggedIn ? "logged in" : "anonymous"}
-    </header>
-  );
-};
+// const Header = () => {
+//   const { name, loggedIn } = useUser();
+//   return (
+//     <header>
+//       <a href="#">Home</a> Hello, {name}, you are{" "}
+//       {loggedIn ? "logged in" : "anonymous"}
+//     </header>
+//   );
+// };
 
-export default Header;
+// export default Header;
