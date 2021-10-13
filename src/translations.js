@@ -4,3 +4,5 @@ const translations = {
     Translate: "Traducir",
   },
 };
+
+export default translations;
